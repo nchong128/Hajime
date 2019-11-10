@@ -20,6 +20,7 @@ Started on 10th November 2019.
   - Creating a new workout
   - Viewing your current workouts
   - Starting a workout 
+  
 
 ## Back-end
 - Client communicates with API Gateway -> Lambda for the backend implementation
