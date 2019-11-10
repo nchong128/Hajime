@@ -20,6 +20,18 @@ Started on 10th November 2019.
 - Storage of user data (workouts, personal info, etc.) done with DynamoDB
 - Text-to-speech done using Amazon Polly
 
+# Colour scheme
+- Primary: #f58549 (mandarin)
+- Secondary: #49b9f5 (picton blue)
+- Background color: #f7f7ff (ghost white)
+
+## Alternative colour scheme
+- Primary: #ed1c24 (red pigment)
+
+# Typography
+- Titles/headings: Banco Standard 
+- Content: Josefin Sans (https://fonts.google.com/specimen/Josefin+Sans)
+
 # Future features
 - Integration with Fitbit or other smartwatches
-- Beep test
+- Beep test and other set fitness programs
