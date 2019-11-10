@@ -15,7 +15,13 @@ Started on 10th November 2019.
 - **Boxing type, interval subtype**: Can voice out the combinations of a boxing workout at a defined time interval. The order of the combinations can either be random or ordered.
 
 # Technical Implementation
-- Client using React Native
+## Front-end: React Native
+- Navbar containing the following pages (ignoring links between pages)
+  - Creating a new workout
+  - Viewing your current workouts
+  - Starting a workout 
+
+## Back-end
 - Client communicates with API Gateway -> Lambda for the backend implementation
 - Storage of user data (workouts, personal info, etc.) done with DynamoDB
 - Text-to-speech done using Amazon Polly
