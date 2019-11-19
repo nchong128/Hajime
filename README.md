@@ -27,13 +27,12 @@ Started on 10th November 2019.
 - Storage of user data (workouts, personal info, etc.) done with DynamoDB
 - Text-to-speech done using Amazon Polly
 
-# Colour scheme
-- Primary: #f58549 (mandarin)
-- Secondary: #49b9f5 (picton blue)
-- Background color: #f7f7ff (ghost white)
-
-## Alternative colour scheme
-- Primary: #ed1c24 (red pigment)
+# Colour palette
+- #E83930 (RED)
+- #9AD72D (GREEN)
+- #390c09 (DARK GREY)
+- #b4b4b4 (LIGHT GREY)
+- #f7f7ff (WHITE)
 
 # Typography
 - Titles/headings: Banco Standard 
