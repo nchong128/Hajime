@@ -30,7 +30,7 @@ Started on 10th November 2019.
 # Colour palette
 - #E83930 (RED)
 - #9AD72D (GREEN)
-- #545454 (DARK GREY)
+- #390c09 (DARK GREY)
 - #b4b4b4 (LIGHT GREY)
 - #f7f7ff (WHITE)
 
