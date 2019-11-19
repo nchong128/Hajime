@@ -14,7 +14,8 @@ const WelcomeScreen = ({navigation}) => {
         'josefinsans-regular' : require('../assets/fonts/JosefinSans-Regular.ttf')
       });
       await setFontLoaded(true);
-      setTimeout(() => {navigation.navigate('WelcomeForm')}, 1500);
+      // navigation.navigate('WelcomeForm');
+      setTimeout(() => {navigation.navigate('WelcomeForm')}, 3000);
     };
 
     loadFonts();
@@ -34,18 +35,20 @@ const WelcomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: COLOURS.PRIMARY,
+        backgroundColor: COLOURS.RED,
         alignItems: 'center',
         justifyContent: 'center'
     },
     title: {
         fontFamily: FONTS.HEADER,
+        color: COLOURS.DARK_GRAY,
         fontSize: 70,
         position: 'absolute',
         bottom: '75%'
     },
     loading: {
         fontFamily: FONTS.CONTENT,
+        color: COLOURS.DARK_GRAY,
         fontSize: 25,
         position: 'absolute',
         bottom: '20%'

@@ -1,7 +1,11 @@
 const COLOURS = {
-	PRIMARY: '#f58549',
-	SECONDARY: '#49b9f5',
-	BACKGROUND: '#f7f7ff'
+	// PRIMARY: '#f58549',
+	RED: '#E83930',
+	GREEN: '#9AD72D',
+	DARK_GRAY: '#390c09',
+	LIGHT_GRAY: '#b4b4b4',
+	NEAR_WHITE: '#f7f7ff',
+	WHITE: '#ffffff'
 };
 
 const FONTS = {
