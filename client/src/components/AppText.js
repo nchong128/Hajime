@@ -1,8 +1,9 @@
 import React from 'react';
 import {Text} from 'react-native';
+import {FONTS} from "../constants";
 
-const AppText = ({text}) => (
-	<Text style= {{fontFamily: 'josefinsans-regular'}}>{text}</Text>
+const AppText = ({children}) => (
+	<Text style= {{fontFamily: FONTS.CONTENT}}>{children}</Text>
 );
 
 export default AppText;

@@ -7,6 +7,6 @@ const HomeScreen = ({navigation}) => {
 			<Text>Welcome {navigation.getParam('name', 'undefined')}</Text>
 		</View>
 	)
-}
+};
 
 export default HomeScreen;
