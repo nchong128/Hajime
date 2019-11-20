@@ -21,12 +21,31 @@ Started on 10th November 2019.
   - Viewing your current workouts
   - Starting a workout 
 
-## Back-end
+## Back-end: AWS
 - Client communicates with API Gateway -> Lambda for the backend implementation
 - Storage of user data (workouts, personal info, etc.) done with DynamoDB
 - Text-to-speech done using Amazon Polly
 
 # Design Implementation
+## Screens
+- Loading screen
+  - Hajime logo and loading sign
+- First-time user screen
+  - Welcomes the user and provides information about what the app is about and how to use it
+  - Gathers basic information from the user (first name, last name, gender, age)
+  - Links you to the main screen
+- Main screen
+  - Displays upfront statistics (workouts done, more TBD)
+  - Minor pathway (button) that lets you either start a workout or create a new one 
+- New workout screen
+  - Lets you choose a workout type 
+  - For the gym type, lets you define the respective exercises with reps, sets and weight
+  - For the boxing type, lets you define the combinations (TBD)
+- Workout screen
+  - Gym type: Displays in a list format, each exercise along with the reps to tap through (can also enter the weight)
+  - Boxing type: Displays the combination on screen and the time interval before a change (mainly audial)
+  - Both screens show the total workout time
+
 ## Colour palette
 - #E83930 (RED)
 - #9AD72D (GREEN)
