@@ -20,24 +20,33 @@ Started on 10th November 2019.
   - Creating a new workout
   - Viewing your current workouts
   - Starting a workout 
-  
 
 ## Back-end
 - Client communicates with API Gateway -> Lambda for the backend implementation
 - Storage of user data (workouts, personal info, etc.) done with DynamoDB
 - Text-to-speech done using Amazon Polly
 
-# Colour palette
+# Design Implementation
+## Colour palette
 - #E83930 (RED)
 - #9AD72D (GREEN)
 - #390c09 (DARK GREY)
 - #b4b4b4 (LIGHT GREY)
 - #f7f7ff (WHITE)
 
-# Typography
+## Typography
 - Titles/headings: Banco Standard 
 - Content: Josefin Sans (https://fonts.google.com/specimen/Josefin+Sans)
+
+
 
 # Future features
 - Integration with Fitbit or other smartwatches
 - Beep test and other set fitness programs
+
+# Learnings
+- This project will mainly revolve around upskilling myself in...
+  - Learning about React Native from zero experience
+  - Gaining more knowledge and hands-on experience with serverless deployment with AWS
+  - Gaining a better idea of the design process for an application
+
