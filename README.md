@@ -47,8 +47,8 @@ Started on 10th November 2019.
   - Both screens show the total workout time
 
 ## Colour palette
-- #E83930 (RED)
-- #9AD72D (GREEN)
+- #FE4239 (RED)
+- #ABEC35 (GREEN)
 - #390c09 (DARK GREY)
 - #b4b4b4 (LIGHT GREY)
 - #f7f7ff (WHITE)
