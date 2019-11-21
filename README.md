@@ -45,6 +45,9 @@ Started on 10th November 2019.
   - Gym type: Displays in a list format, each exercise along with the reps to tap through (can also enter the weight)
   - Boxing type: Displays the combination on screen and the time interval before a change (mainly audial)
   - Both screens show the total workout time
+  
+## Wireframes
+- https://www.canva.com/design/DADr06v6FWM/11fhgB-RCfoAqRAYqU3ZUw/view?utm_content=DADr06v6FWM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 
 ## Colour palette
 - #FE4239 (RED)
