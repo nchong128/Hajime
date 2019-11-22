@@ -38,6 +38,12 @@ Started on 10th November 2019.
   - Displays upfront statistics (workouts done, more TBD)
   - Minor pathway (button) that lets you either start a workout or create a new one 
   - User should also have access to settings and to view their current workouts
+- Settings screen
+  - Displays settings to be changed (colour themes?)
+- User Profile screen
+  - Displays your personal information and the ability to edit them
+- View Current Workouts screen
+  - List of workouts that you have created with the ability to edit each one
 - New workout screen
   - Lets you choose a workout type 
   - For the gym type, lets you define the respective exercises with reps, sets and weight
