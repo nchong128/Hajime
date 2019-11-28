@@ -15,20 +15,17 @@ const WelcomeScreen = ({navigation}) => {
       });
       await setFontLoaded(true);
       // navigation.navigate('WelcomeForm');
-      setTimeout(() => {navigation.navigate('WelcomeForm')}, 3000);
+      setTimeout(() => {navigation.navigate('Home')}, 0);
     };
 
     loadFonts();
-    console.log('Fonts loaded');
-  }, []);
+  });
 
   return (
-    fontLoaded ? (
-        <View style={styles.container}>
-            <Text style={styles.title}>HAJIME</Text>
-            <Text style={styles.loading}>Loading...</Text>
-        </View>
-    ) : <AppLoading/>
+    <View style={styles.container}>
+        <Text style={styles.title}>HAJIME</Text>
+        <Text style={styles.loading}>Loading...</Text>
+    </View>
   );
 };
 
@@ -41,17 +38,17 @@ const styles = StyleSheet.create({
     },
     title: {
         fontFamily: FONTS.HEADER,
-        color: COLOURS.DARK_GRAY,
-        fontSize: 70,
+        color: COLOURS.NEAR_WHITE,
+        fontSize: 55,
         position: 'absolute',
-        bottom: '75%'
+        bottom: '65%'
     },
     loading: {
         fontFamily: FONTS.CONTENT,
-        color: COLOURS.DARK_GRAY,
+        color: COLOURS.NEAR_WHITE,
         fontSize: 25,
         position: 'absolute',
-        bottom: '20%'
+        bottom: '15%'
     }
 });
 

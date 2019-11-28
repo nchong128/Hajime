@@ -5,7 +5,6 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 import WelcomeScreen from './src/WelcomeScreen';
-import WelcomeFormScreen from './src/WelcomeFormScreen';
 import HomeScreen from './src/HomeScreen';
 
 const MainNavigator = createStackNavigator({
@@ -15,13 +14,12 @@ const MainNavigator = createStackNavigator({
       header: null
     }
   },
-  WelcomeForm: {
-    screen : WelcomeFormScreen,
+  Home: {
+    screen : HomeScreen,
     navigationOptions: {
       header: null
     }
-  },
-  Home: HomeScreen,
+  }
 }, {
   initialRouteName: 'Welcome'
 });
