@@ -20,24 +20,62 @@ Started on 10th November 2019.
   - Creating a new workout
   - Viewing your current workouts
   - Starting a workout 
-  
 
-## Back-end
+## Back-end: AWS
 - Client communicates with API Gateway -> Lambda for the backend implementation
 - Storage of user data (workouts, personal info, etc.) done with DynamoDB
 - Text-to-speech done using Amazon Polly
 
-# Colour palette
-- #E83930 (RED)
-- #9AD72D (GREEN)
+# Design Implementation
+## Screens
+- Loading screen
+  - Hajime logo and loading sign
+- First-time user screen
+  - Welcomes the user and provides information about what the app is about and how to use it
+  - Gathers basic information from the user (first name, last name, gender, age)
+  - Links you to the main screen
+- Main screen
+  - Displays upfront statistics (workouts done, more TBD)
+  - Minor pathway (button) that lets you either start a workout or create a new one 
+  - User should also have access to settings and to view their current workouts
+- Settings screen
+  - Displays settings to be changed (colour themes?)
+- User Profile screen
+  - Displays your personal information and the ability to edit them
+- View Current Workouts screen
+  - List of workouts that you have created with the ability to edit each one
+- New workout screen
+  - Lets you choose a workout type 
+  - For the gym type, lets you define the respective exercises with reps, sets and weight
+  - For the boxing type, lets you define the combinations (TBD)
+- Workout screen
+  - Gym type: Displays in a list format, each exercise along with the reps to tap through (can also enter the weight)
+  - Boxing type: Displays the combination on screen and the time interval before a change (mainly audial)
+  - Both screens show the total workout time
+  
+## Wireframes
+- https://www.canva.com/design/DADr06v6FWM/11fhgB-RCfoAqRAYqU3ZUw/view?utm_content=DADr06v6FWM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+## Colour palette
+- #FE4239 (RED)
+- #ABEC35 (GREEN)
 - #390c09 (DARK GREY)
 - #b4b4b4 (LIGHT GREY)
 - #f7f7ff (WHITE)
 
-# Typography
+## Typography
 - Titles/headings: Banco Standard 
 - Content: Josefin Sans (https://fonts.google.com/specimen/Josefin+Sans)
+
+
 
 # Future features
 - Integration with Fitbit or other smartwatches
 - Beep test and other set fitness programs
+
+# Learnings
+- This project will mainly revolve around upskilling myself in...
+  - Learning about React Native from zero experience
+  - Gaining more knowledge and hands-on experience with serverless deployment with AWS
+  - Gaining a better idea of the design process for an application
+
