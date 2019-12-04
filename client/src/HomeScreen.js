@@ -1,9 +1,13 @@
 import React, {useState, useEffect} from 'react';
-import { StyleSheet, View, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput, ScrollView, Image } from 'react-native';
 import {COLOURS} from "./constants";
-import { Container, Header, Content, Footer, FooterTab, Button, Text, Badge, Body, Left, Title, Right } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Text, Badge, Body, Left, Title, Right, Card, CardItem } from 'native-base';
 import MatComIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicon from 'react-native-vector-icons/Ionicons';
+
+import WeeklyCard from "./components/WeeklyCard";
+import RandomFactsCard from "./components/RandomFactsCard";
+import MetricsCard from "./components/MetricsCard";
 
 const HomeScreen = ({navigation}) => {
 	return (
@@ -21,15 +25,22 @@ const HomeScreen = ({navigation}) => {
 					</Button>
 				</Right>
 			</Header>
-			<Content />
+			<ScrollView>
+				<WeeklyCard/>
+				<MetricsCard/>
+				<RandomFactsCard/>
+			</ScrollView>
 			<Footer style={styles.footer}>
 				<FooterTab>
 					<Button vertical>
-						<MatComIcon name="apps" size={ICON_SIZE} style={styles.icon}/>
+						<MatComIcon name="lightbulb" size={ICON_SIZE} style={styles.icon}/>
 						<Text uppercase={false} style={styles.footerText}>Insights</Text>
 					</Button>
 					<Button vertical>
-						<MatComIcon name="boxing-glove" size={ICON_SIZE*3} style={styles.mainIcon}/>
+						<Image
+							style={styles.image}
+							source={require('./images/boxing.svg')}
+						/>
 					</Button>
 					<Button vertical>
 						<MatComIcon name="camera" size={ICON_SIZE} style={styles.icon}/>
@@ -45,7 +56,8 @@ const ICON_SIZE = 20;
 
 const styles = StyleSheet.create({
 	title: {
-		fontFamily: 'josefinsans-regular'
+		fontFamily: 'josefinsans-regular',
+		marginLeft: 5
 	},
 	container: {
 		backgroundColor: COLOURS.RED
@@ -64,7 +76,7 @@ const styles = StyleSheet.create({
 	},
 	mainIcon: {
 		color: COLOURS.DARK_GRAY,
-		transform: 'rotate(90deg)',
+		transform: [{rotateX: '90deg'}],
 		position: 'relative',
 		bottom: 10
 	},
@@ -74,6 +86,11 @@ const styles = StyleSheet.create({
 		color: COLOURS.DARK_GRAY,
 		fontFamily: 'josefinsans-regular',
 		textTransform: 'none'
+	},
+	image : {
+		width: 50,
+		height: 50,
+		color: COLOURS.DARK_GRAY
 	}
 });
 

@@ -6,6 +6,7 @@ import {COLOURS, FONTS} from './constants';
 
 const WelcomeScreen = ({navigation}) => {
   const [fontLoaded, setFontLoaded] = useState(false);
+  const [debug] = useState(false);
 
   useEffect(() => {
     const loadFonts = async () => {
@@ -15,7 +16,7 @@ const WelcomeScreen = ({navigation}) => {
       });
       await setFontLoaded(true);
       // navigation.navigate('WelcomeForm');
-      setTimeout(() => {navigation.navigate('Home')}, 0);
+      setTimeout(() => {navigation.navigate('Home')}, debug ? 0 : 3000);
     };
 
     loadFonts();
