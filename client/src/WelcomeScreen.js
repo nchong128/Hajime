@@ -6,7 +6,7 @@ import {COLOURS, FONTS} from './constants';
 
 const WelcomeScreen = ({navigation}) => {
   const [fontLoaded, setFontLoaded] = useState(false);
-  const [debug] = useState(false);
+  const [debug] = useState(true);
 
   useEffect(() => {
     const loadFonts = async () => {

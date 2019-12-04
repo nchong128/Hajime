@@ -33,7 +33,11 @@ const HomeScreen = ({navigation}) => {
 			<Footer style={styles.footer}>
 				<FooterTab>
 					<Button vertical>
-						<MatComIcon name="lightbulb" size={ICON_SIZE} style={styles.icon}/>
+						{/*<MatComIcon name="lightbulb" size={ICON_SIZE} style={styles.icon}/>*/}
+						<Image
+							style={styles.tinyImage}
+							source={require('./images/lightbulb.svg')}
+						/>
 						<Text uppercase={false} style={styles.footerText}>Insights</Text>
 					</Button>
 					<Button vertical>
@@ -43,7 +47,11 @@ const HomeScreen = ({navigation}) => {
 						/>
 					</Button>
 					<Button vertical>
-						<MatComIcon name="camera" size={ICON_SIZE} style={styles.icon}/>
+						{/*<MatComIcon name="camera" size={ICON_SIZE} style={styles.icon}/>*/}
+						<Image
+							style={styles.tinyImage}
+							source={require('./images/dumbbell.svg')}
+						/>
 						<Text uppercase={false} style={styles.footerText}>My Workouts</Text>
 					</Button>
 				</FooterTab>
@@ -85,11 +93,18 @@ const styles = StyleSheet.create({
 		textAlign: 'center',
 		color: COLOURS.DARK_GRAY,
 		fontFamily: 'josefinsans-regular',
-		textTransform: 'none'
+		textTransform: 'none',
+		paddingLeft: 0,
+		paddingRight: 0
 	},
 	image : {
 		width: 50,
 		height: 50,
+		color: COLOURS.DARK_GRAY
+	},
+	tinyImage: {
+		width: 25,
+		height: 25,
 		color: COLOURS.DARK_GRAY
 	}
 });
