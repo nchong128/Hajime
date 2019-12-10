@@ -73,9 +73,9 @@ Started on 10th November 2019.
 - Integration with Fitbit or other smartwatches
 - Beep test and other set fitness programs
 
-# Learnings
+# Takeaways
 - This project will mainly revolve around upskilling myself in...
   - Learning about React Native from zero experience
-  - Gaining more knowledge and hands-on experience with serverless deployment with AWS
+  - Gaining more knowledge and hands-on experience with serverless deployment with AWS, including experience around writing CloudFormation templates, utilizing API Gateway and Lambda properly and properly designing DynamoDB schemas
   - Gaining a better idea of the design process for an application
 
