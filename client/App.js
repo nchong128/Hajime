@@ -8,34 +8,19 @@ import WelcomeScreen from './src/screens/WelcomeScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import MyWorkoutsScreen from "./src/screens/MyWorkoutsScreen";
 import NewWorkoutScreen from "./src/screens/NewWorkoutScreen";
+import ProfileScreen from "./src/screens/ProfileScreen";
 
 const MainNavigator = createStackNavigator({
-  Welcome: {
-    screen : WelcomeScreen,
-    navigationOptions: {
-      header: null
-    }
-  },
-  Home: {
-    screen : HomeScreen,
-    navigationOptions: {
-      header: null
-    }
-  },
-  MyWorkouts: {
-  	screen: MyWorkoutsScreen,
-    navigationOptions: {
-  		header: null
-	}
-  },
-  NewWorkout: {
-    screen: NewWorkoutScreen,
-    navigationOptions: {
-      header: null
-    }
-  }
+  Welcome: { screen: WelcomeScreen},
+  Home: { screen: HomeScreen},
+  MyWorkouts: { screen: MyWorkoutsScreen},
+  NewWorkout: { screen: NewWorkoutScreen},
+  Profile: { screen: ProfileScreen}
 }, {
-  initialRouteName: 'Welcome'
+  initialRouteName: 'Welcome',
+  defaultNavigationOptions: {
+    header: null
+  }
 });
 
 const AppContainer = createAppContainer(MainNavigator);
