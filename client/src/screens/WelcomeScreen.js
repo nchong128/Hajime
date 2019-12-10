@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
-import {COLOURS, FONTS} from './constants';
+import {COLOURS, FONTS} from '../utils/constants';
 
 const WelcomeScreen = ({navigation}) => {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -11,12 +11,12 @@ const WelcomeScreen = ({navigation}) => {
   useEffect(() => {
     const loadFonts = async () => {
       await Font.loadAsync({
-        'banco-regular' : require('../assets/fonts/Banco-Regular.ttf'),
-        'josefinsans-regular' : require('../assets/fonts/JosefinSans-Regular.ttf')
+        'banco-regular' : require('../../assets/fonts/Banco-Regular.ttf'),
+        'josefinsans-regular' : require('../../assets/fonts/JosefinSans-Regular.ttf')
       });
       await setFontLoaded(true);
       // navigation.navigate('WelcomeForm');
-      setTimeout(() => {navigation.navigate('Home')}, debug ? 0 : 3000);
+      setTimeout(() => navigation.navigate('Home'), debug ? 0 : 3000);
     };
 
     loadFonts();

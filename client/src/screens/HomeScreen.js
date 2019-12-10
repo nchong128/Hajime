@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { StyleSheet, View, TextInput, ScrollView, Image } from 'react-native';
-import {COLOURS} from "./constants";
+import {COLOURS, ICON_SIZE} from "../utils/constants";
 import { Container, Header, Content, Footer, FooterTab, Button, Text, Badge, Body, Left, Title, Right, Card, CardItem } from 'native-base';
 import MatComIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 
-import WeeklyCard from "./components/WeeklyCard";
-import RandomFactsCard from "./components/RandomFactsCard";
-import MetricsCard from "./components/MetricsCard";
+import WeeklyCard from "../components/WeeklyCard";
+import RandomFactsCard from "../components/RandomFactsCard";
+import MetricsCard from "../components/MetricsCard";
 
 const HomeScreen = ({navigation}) => {
 	return (
@@ -25,6 +25,7 @@ const HomeScreen = ({navigation}) => {
 					</Button>
 				</Right>
 			</Header>
+
 			<ScrollView>
 				<WeeklyCard/>
 				<MetricsCard/>
@@ -36,31 +37,33 @@ const HomeScreen = ({navigation}) => {
 						{/*<MatComIcon name="lightbulb" size={ICON_SIZE} style={styles.icon}/>*/}
 						<Image
 							style={styles.tinyImage}
-							source={require('./images/lightbulb.svg')}
+							source={require('../images/lightbulb.svg')}
 						/>
-						<Text uppercase={false} style={styles.footerText}>Insights</Text>
+						<Text style={styles.footerText} uppercase={false}>Insights</Text>
 					</Button>
 					<Button vertical>
 						<Image
 							style={styles.image}
-							source={require('./images/boxing.svg')}
+							source={require('../images/boxing.svg')}
 						/>
 					</Button>
-					<Button vertical>
-						{/*<MatComIcon name="camera" size={ICON_SIZE} style={styles.icon}/>*/}
+					<Button vertical onPress={() => navigation.navigate('MyWorkouts')}>
 						<Image
 							style={styles.tinyImage}
-							source={require('./images/dumbbell.svg')}
+							source={require('../images/dumbbell.svg')}
 						/>
-						<Text uppercase={false} style={styles.footerText}>My Workouts</Text>
+						<Text
+							style={styles.footerText}
+							uppercase={false}
+						>
+							My Workouts
+						</Text>
 					</Button>
 				</FooterTab>
 			</Footer>
 		</Container>
 	)
 };
-
-const ICON_SIZE = 20;
 
 const styles = StyleSheet.create({
 	title: {
@@ -93,19 +96,16 @@ const styles = StyleSheet.create({
 		textAlign: 'center',
 		color: COLOURS.DARK_GRAY,
 		fontFamily: 'josefinsans-regular',
-		textTransform: 'none',
 		paddingLeft: 0,
 		paddingRight: 0
 	},
 	image : {
 		width: 50,
-		height: 50,
-		color: COLOURS.DARK_GRAY
+		height: 50
 	},
 	tinyImage: {
 		width: 25,
-		height: 25,
-		color: COLOURS.DARK_GRAY
+		height: 25
 	}
 });
 

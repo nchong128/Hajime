@@ -4,8 +4,10 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import WelcomeScreen from './src/WelcomeScreen';
-import HomeScreen from './src/HomeScreen';
+import WelcomeScreen from './src/screens/WelcomeScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import MyWorkoutsScreen from "./src/screens/MyWorkoutsScreen";
+import NewWorkoutScreen from "./src/screens/NewWorkoutScreen";
 
 const MainNavigator = createStackNavigator({
   Welcome: {
@@ -16,6 +18,18 @@ const MainNavigator = createStackNavigator({
   },
   Home: {
     screen : HomeScreen,
+    navigationOptions: {
+      header: null
+    }
+  },
+  MyWorkouts: {
+  	screen: MyWorkoutsScreen,
+    navigationOptions: {
+  		header: null
+	}
+  },
+  NewWorkout: {
+    screen: NewWorkoutScreen,
     navigationOptions: {
       header: null
     }

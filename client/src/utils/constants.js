@@ -13,4 +13,7 @@ const FONTS = {
 	CONTENT: 'josefinsans-regular'
 };
 
-export {COLOURS, FONTS};
+const ICON_SIZE = 20;
+
+
+export {COLOURS, FONTS, ICON_SIZE};
