@@ -1,7 +1,7 @@
 # Hajime
 Hajime is a workout tracker built for simplicity and convenience. Made with React Native. Deployed with AWS.
 
-Started on 10th November 2019.
+Re-started on 13th November 2020.
 
 # Features
 ## Workout storage
@@ -15,7 +15,7 @@ Started on 10th November 2019.
 - **Boxing type, interval subtype**: Can voice out the combinations of a boxing workout at a defined time interval. The order of the combinations can either be random or ordered.
 
 # Technical Implementation
-## Front-end: React Native
+## Front-end: React
 - Navbar containing the following pages (ignoring links between pages)
   - Creating a new workout
   - Viewing your current workouts
@@ -67,15 +67,13 @@ Started on 10th November 2019.
 - Titles/headings: Banco Standard 
 - Content: Josefin Sans (https://fonts.google.com/specimen/Josefin+Sans)
 
-
-
 # Future features
 - Integration with Fitbit or other smartwatches
 - Beep test and other set fitness programs
 
 # Takeaways
 - This project will mainly revolve around upskilling myself in...
-  - Learning about React Native from zero experience
+  - Learning about React from zero experience
   - Gaining more knowledge and hands-on experience with serverless deployment with AWS, including experience around writing CloudFormation templates, utilizing API Gateway and Lambda properly and properly designing DynamoDB schemas
   - Gaining a better idea of the design process for an application
 
